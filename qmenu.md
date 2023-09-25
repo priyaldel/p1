@@ -1,4 +1,4 @@
-####Questions
+### Codes
 |S.No|Ques|Link|
 ---|---|---|
 |1|Calculate|[Click here](https://github.com/priyaldel/p1/blob/main/q1.py)|
