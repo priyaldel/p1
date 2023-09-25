@@ -1,27 +1,25 @@
 class shop:
     def __init__(self):
-        self.orig = {}
-        self.x={}
+        self.items={}
         
-    def add(self,name,price):
-        self.orig[name]=price
-        if name in self.x:
-            self.x[name] +=price
+    def add(self,item_name,item_price):
+        if item_name in self.items:
+            self.items[item_name] +=item_price
         else:
-            self.x[name] = price
+            self.items[item_name] = item_price
             
-    def rem(self,name):
-        if name in self.x:
-            del self.x[name]
+    def rem(self,item_name):
+        if item_name in self.items:
+            del self.items[item_name]
             
     def total(self):
-        total=sum(self.x.values())
+        total=sum(self.items.values())
         return total
     
     def show(self):
         print("\nShopping Cart:")
-        for y, price in self.x.y():
-            print(f"{x}: ${price:.2f}")
+        for item, price in self.items.items():
+            print(f"{item}: ${price:.2f}")
 
 cart=shop()
 cart.add("1",10)
